@@ -1,0 +1,150 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+/* Glassmorphism Profile Card */
+.profile-card {
+    position: relative;
+    max-width: 340px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.5);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+    margin-bottom: 20px;
+}
+
+/* Text Styles */
+.profile-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.username {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.role-tag {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #d1ff33;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #00ffff;
+}
+
+.stats span {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Position the particles canvas */
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+/* Update body to not overflow */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Keep your profile-card at a higher z-index */
+.profile-card {
+    z-index: 1;
+}
+
+/* Edit buttons with pencil icon */
+button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+button:hover {
+  color: #00ffff;
+}
+
+/* Font Awesome Pencil icon for edit */
+.fas.fa-pencil-alt {
+  font-size: 1.4rem;
+}
+
+/* Profile Edit Input Fields */
+input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
